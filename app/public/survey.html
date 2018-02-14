@@ -1,0 +1,318 @@
+<!doctype html>	
+	<html lang="en">
+	<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiking Survey</title>
+ 
+<link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Heebo" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/survey.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+<!-- 
+<script type="text/javascript" src="../js/logic.js"></script>
+ -->
+	
+	</head>
+	
+	<body>
+
+
+<div class="section">
+	<div class='container'>
+        <div class='card-panel yellow darken-1 col s12 center-align'>
+	<div class="jumbotron">
+		<h1>Hiking Friend Finder</h1>
+		<br/>
+					<h2><strong>About Me</strong></h2>
+
+					<div class="divider"></div>
+			
+
+
+				<!-- Name Input -->
+				<div class="row">
+					<div class="input-field col s6">
+						<i class="material-icons prefix">account_circle</i>
+						<input id="nameInput" type="text" class="validate">
+						<label class="active" for="nameInput">Name</label>
+					</div>
+				</div>
+
+				<!-- Image Link Input -->
+				<div class="row">
+					<div class="input-field col s6">
+						<i class="material-icons prefix">perm_media</i>
+						<input id="imageInput" type="text" class="validate">
+						<label class="active" for="imageInput">Image Link</label>
+					</div>
+				</div>
+
+
+				<!-- Questions Header -->
+				<div class="section">
+					<h3><strong>Survey Questions</strong></h3>
+					<div class="divider"></div>
+				</div>
+				
+				
+				<!-- Questions -->
+				<div class='section'>
+					<p>1) It's important that your hike includes waterfalls.</p>
+					<input name="question1" type="radio" id="water1" value="1"/>
+					<label for="water1">Strongly Disagree</label>
+					<input name="question1" type="radio" id="swater2" value="2"/>
+					<label for="water2">Disagree</label>
+					<input name="question1" type="radio" id="water3"  value="3"/>
+					<label for="water3">Neutral</label>
+					<input name="question1" type="radio" id="water4" value="4" />
+					<label for="water4">Agree</label>
+					<input name="question1" type="radio" id="water5" value="5" />
+					<label for="water5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>2) I prefer 2 mile hikes over 8 miles.</p>
+					<input name="question2" type="radio" id="miles1" value="1"/>
+					<label for="miles1">Strongly Disagree</label>
+					<input name="question2" type="radio" id="miles2" value="2"/>
+					<label for="miles2">Disagree</label>
+					<input name="question2" type="radio" id="miles3"  value="3"/>
+					<label for="miles3">Neutral</label>
+					<input name="question2" type="radio" id="miles4" value="4" />
+					<label for="miles4">Agree</label>
+					<input name="question2" type="radio" id="miles5" value="5" />
+					<label for="miles5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>3) The commute time length is more important than the hiking destination.</p>
+					<input name="question3" type="radio" id="commute1" value="1"/>
+					<label for="commute1">Strongly Disagree</label>
+					<input name="question3" type="radio" id="commute2" value="2"/>
+					<label for="commute2">Disagree</label>
+					<input name="question3" type="radio" id="commute3"  value="3"/>
+					<label for="commute3">Neutral</label>
+					<input name="question3" type="radio" id="commute4" value="4" />
+					<label for="commute4">Agree</label>
+					<input name="question3" type="radio" id="commute5" value="5" />
+					<label for="commute5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>4) I like hiking 14ers.</p>
+					<input name="question4" type="radio" id="high1" value="1"/>
+					<label for="high1">Strongly Disagree</label>
+					<input name="question4" type="radio" id="high2" value="2"/>
+					<label for="high2">Disagree</label>
+					<input name="question4" type="radio" id="high3"  value="3"/>
+					<label for="high3">Neutral</label>
+					<input name="question4" type="radio" id="high4" value="4" />
+					<label for="high4">Agree</label>
+					<input name="question4" type="radio" id="high5" value="5" />
+					<label for="high5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>5) I prefer thru hiking.</p>
+					<input name="question5" type="radio" id="thru1" value="1"/>
+					<label for="thru1">Strongly Disagree</label>
+					<input name="question5" type="radio" id="thru2" value="2"/>
+					<label for="thru2">Disagree</label>
+					<input name="question5" type="radio" id="thru3"  value="3"/>
+					<label for="thru3">Neutral</label>
+					<input name="question5" type="radio" id="thru4" value="4" />
+					<label for="thru4">Agree</label>
+					<input name="question5" type="radio" id="thru5" value="5" />
+					<label for="thru5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>6) I like hiking in the winter.</p>
+					<input name="question6" type="radio" id="winter1" value="1"/>
+					<label for="winter1">Strongly Disagree</label>
+					<input name="question6" type="radio" id="winter2" value="2"/>
+					<label for="winter2">Disagree</label>
+					<input name="question6" type="radio" id="winter3"  value="3"/>
+					<label for="winter3">Neutral</label>
+					<input name="question6" type="radio" id="winter4" value="4" />
+					<label for="winter4">Agree</label>
+					<input name="question6" type="radio" id="winter5" value="5" />
+					<label for="winter5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>7) I'd rather wear tennis shoes than hiking boots.</p>
+					<input name="question7" type="radio" id="shoes1" value="1"/>
+					<label for="shoes1">Strongly Disagree</label>
+					<input name="question7" type="radio" id="shoes2" value="2"/>
+					<label for="shoes2">Disagree</label>
+					<input name="question7" type="radio" id="shoes3"  value="3"/>
+					<label for="shoes3">Neutral</label>
+					<input name="question7" type="radio" id="shoes4" value="4" />
+					<label for="shoes4">Agree</label>
+					<input name="question7" type="radio" id="shoes5" value="5" />
+					<label for="shoes5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>8) Dogs must be allowed on the trail.</p>
+					<input name="question8" type="radio" id="dog1" value="1"/>
+					<label for="dog1">Strongly Disagree</label>
+					<input name="question8" type="radio" id="dog2" value="2"/>
+					<label for="dog2">Disagree</label>
+					<input name="question8" type="radio" id="dog3"  value="3"/>
+					<label for="dog3">Neutral</label>
+					<input name="question8" type="radio" id="dog4" value="4" />
+					<label for="dog4">Agree</label>
+					<input name="question8" type="radio" id="dog5" value="5" />
+					<label for="dog5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>9) Sunrise hikes are better than sunset.</p>
+					<input name="question9" type="radio" id="sunrise1" value="1"/>
+					<label for="sunrise1">Strongly Disagree</label>
+					<input name="question9" type="radio" id="sunrise2" value="2"/>
+					<label for="sunrise2">Disagree</label>
+					<input name="question9" type="radio" id="sunrise3"  value="3"/>
+					<label for="sunrise3">Neutral</label>
+					<input name="question9" type="radio" id="sunrise4" value="4" />
+					<label for="sunrise4">Agree</label>
+					<input name="question9" type="radio" id="sunrise5" value="5" />
+					<label for="sunrise5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+					<p>10) I prefer to bushwhack than urban hike.</p>
+					<input name="question10" type="radio" id="urban1" value="1"/>
+					<label for="urban1">Strongly Disagree</label>
+					<input name="question10" type="radio" id="urban2" value="2"/>
+					<label for="urban2">Disagree</label>
+					<input name="question10" type="radio" id="urban3"  value="3"/>
+					<label for="urban3">Neutral</label>
+					<input name="question10" type="radio" id="urban4" value="4" />
+					<label for="urban4">Agree</label>
+					<input name="question10" type="radio" id="urban5" value="5" />
+					<label for="urban5">Strongly Agree</label>
+				</div>
+
+				<div class='section'>
+				<button class="waves-effect waves-light btn-large" id="submit" type="button">Match Me!</button>
+				</div>
+
+				<!-- Modal Structure -->
+				<div id="modal1" class="modal">
+					<div class="modal-content">
+						<h4>Your closest match was...</h4>
+						<span id='modalArea'></span>
+					</div>
+					<div class="modal-footer">
+						<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Ok</a>
+					</div>
+				</div>
+
+</div>
+</div>
+
+	<!-- Links Button -->
+	<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+		<a class="btn-floating btn-large red">
+			<i class="large material-icons">settings</i>
+		</a>
+		<ul>
+			<li><a class="btn-floating yellow darken-1 tooltipped" data-position="left" data-delay="50" data-tooltip="Github Repo" href="https://github.com/audrav07/friendfinder" target="_blank"><i class="material-icons">code</i></a></li>
+			<li><a class="btn-floating green tooltipped" data-position="left" data-delay="50" data-tooltip="API" href="/api/survey" target="_blank"><i class="material-icons">subject</i></a></li>
+		<!-- 	<li><a class="btn-floating blue tooltipped" data-position="left" data-delay="50" data-tooltip="Portfolio" href="https://whispering-fortress-96565.herokuapp.com/index.html" target="_blank"><i class="material-icons">perm_identity</i></a></li> -->
+			<!-- <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li> -->
+		</ul>
+	</div>
+	</div>
+
+
+<!-- JavaScript & jQuery -->
+<script type="text/javascript">
+		$(document).ready(function() {
+
+	// Code that makes modals trigger on click
+	$('.modal-trigger').leanModal();
+
+	// When we click the submit button...
+	$("#submit").click(function(){
+
+		// Checking to see if user input a name & image.
+		if ( $('#nameInput').val() == null || $('#imageInput').val() == null ) {
+			alert("Please fill out all questions!");
+			return false;
+		};
+
+		// Checking to see if user answered all of the survey questions.
+		for (var i = 1; i <= 10; i++) {
+			if ( $("input:radio[name=question"+i+"]:checked").val() == null ) {
+				alert("Please fill out all questions!");
+				return false;
+			};
+		};
+
+		// Creating an array to hold the answers.
+		var scoreArray = [];
+
+		// Looping through the answers and pushing them to the array. 
+		for (var i = 1; i <= 10; i++) {
+			scoreArray.push( $("input:radio[name=question"+i+"]:checked").val() );
+		}
+
+		// Creating an object that stores all of the input given by the user.
+		var person = {
+			name: $('#nameInput').val(),
+			image: $('#imageInput').val(),
+			scores: scoreArray
+		};
+
+		// Storing our current URL in a variable.
+		var currentURL = window.location.origin;
+
+		// Making an AJAX post request. The server calculates the match and sends back the info in the data object.
+		$.post(currentURL + '/api/survey', person).done(function(data){
+
+			// Opens our modal.
+			$('#modal1').openModal();
+
+			// Populate out modal with information about the match.
+			$('#modalArea').empty()
+			var picture = '<img class="circle" src="'+data.image+'"">';
+			$('#modalArea').append("<h5>" + data.name + " !</h5>")
+			$('#modalArea').append(picture)
+
+		});
+
+	});
+
+});
+	</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
