@@ -1,4 +1,64 @@
-.jumbotron {
+/*img{
+  height: 500px
+  width:800px;
+}*/
+body {
+  width: 75%;
+  margin: 0px auto; 
+
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+ }
+ header {
+  height: 100px;
+ }
+
+ header > nav {
+  height: 100%;
+ }
+
+  main {
+  flex: 1 0 auto;
+ }
+
+ main h1 {
+  font-weight: bold;
+
+ }
+ h1{
+
+ }
+
+
+  main h3 {
+  font-weight: 300;
+ }
+
+.mainpanel{
+  margin: 50px;
+}
+
+ #mainpanel-content {
+  margin: 50px;
+ }
+.card-title{
+  display: flex;
+}
+.container{
+   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container .row{
+  margin: 0 auto;
+}
+
+/*.jumbotron {
   text-align: center;
   font-weight: bold;
   height: 350px;
@@ -55,7 +115,7 @@ html {
   height: 280px;
   width: 385px;
 }*/
-.pics {
+/*.pics {
   height: 280px;
   width: 385px;
   float: left;
@@ -93,12 +153,17 @@ footer {
 #subBtn {
   padding-left: 500px;
   margin-bottom: 25px;
-}
+}*/
 
-body {
+/*body {
   background-color: #80ced6 !important;
+  background-image: url("../images/mountains.jpg");
+ background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-
+*/
 /*body {
   background-image: url("../images/mountains.jpg");
  background-size: cover;

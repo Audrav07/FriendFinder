@@ -7,15 +7,23 @@ body {
 #matchPhoto {
     width: 100%;
 }
+h1, h3, h2, p{
+    font-family:Heebo, sans-serif;
+}
 
 .jumbotron {
+        background-image: url('../images/mountains.jpg');
 	background-color: white;
 /*    background-color:rgba(234,241,254,0.48);*/
     border-radius: 25px;
 	width: auto;
 }
 
+#modal1{
+    height: 500px;
+    width: 400px;
 
+}
 .modal-content {
 	text-align: center;
 }

@@ -1,72 +1,169 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>friends</title>
- 
-<link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Heebo" rel="stylesheet">
+  <meta charset="UTF-8">
+    <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css">
 
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
+            
+  <!-- materialize icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" type="text/html" href="assets/css/style.css">
+
+  <title>Friend Finder</title>
 </head>
-<div class='container'>
-    <div class='card-panel yellow darken-1 col s12'>
-      <section class='center-align'>
-<div class="jumbotron">
-        <h1 class="display-3">Hiking Friend Finder</h1>
-        <p class="lead">Answer a few basic questions. <br>
-            Then find your new hiking buddy!</p>
-            <p class="lead">
-                <hr class="m-y-2">
-                <a href="/survey"><button type="button" class="btn btn btn-lg"><span class="glyphicon glyphicon-fire"></span> Start Survey</button></a>
-            </p>
-        </div>
+<body>
 
-        <!-- <div id = "container"> -->
-            <br/>
-            <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="assets/images/mountains.jpg" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="assets/images/dogs.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="assets/images/rocky.jpg" alt="Third slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="assets/images/dog.jpg" alt="Fourth slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="assets/images/vail.jpg" alt="Fifth slide">
-    </div>
+
+<!-- 
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 z-depth-5 mainpanel">
+          <div id="mainpanel-content">
+            <h1>Hiking Friend Finder</h1>
+            <div class="divider"></div>
+            <h2>Don't want to hike solo? </h2>
+            <h3>Answer a few questions and find your new hiking buddy!</h3>
+            <a href="/survey">
+              <button class="btn waves-effect waves-light" type="submit" name="action">Go to Survey
+                <i class="material-icons right">send</i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+    <header>
+    <nav>
+      <div class="nav-wrapper pink accent-2">
+        <i class="fa fa-address-book-o fa-5x" aria-hidden="true" id=logo-icon></i>
+        <a href="/" class="brand-logo" id="logo">Friend Finder</a>
+        <ul class="right hide-on-med-and-down" id="head-nav-links">
+          <li><a href="/survey">Survey</a></li>
+          <li><a href="/api/friends">API Friends List</a></li>
+          <li><a href="https://github.com/angrbrd/friend-finder">GitHub Repo</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+<div class="container">
+<div class="row center-align">
+        <!-- <div class="col s12 m7 z-depth-5 mainpanel"> -->
+          <div class="col s8 offset-m2 z-depth-5 mainpanel">
+          <div class="card">
+            <div class="card-image">
+              <img src="assets/images/mountains.jpg">
+             <span class="card-title"><h1>Hiking Friend Finder</span></h1>
+            </div>
+            </div>
+            <div class="card-content">
+              <h4>Don't want to hike solo? </h4>
+            <h4>Answer a few questions and find your new hiking buddy!</h4>
+            <br />
+            </div>
+            <div class="card-action">
+
+              <a href="/survey">
+
+              <button class="btn waves-effect waves-light" type="submit" name="action">Go to Survey
+                <i class="material-icons right">send</i>
+              </button>
+                 <br />
+                 <br />
+            </a>
+                <br />
+            </div>
+          </div>
+        </div>
+      </div>
+            
+    </div>       
+            
+  <!-- <div class='container'>
+    <div class="row">
+      <div class="col s6 m12">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <span class="card-title">Hiking Friend Finder</span>
+            <p>Don't want to hike solo? Answer a few questions and find your new hiking buddy!</p>
+          </div>
+          <div class="card-action">
+            <a href="/survey"><button></button></a>
+ -->
+
+<!--     <div class='card-panel green darken-1 col s12'> -->
+     <!--  <section class='center-align'>
+      <h1><i class="medium material-icons">person_pin</i> Friend Finder</h1>
+      <h4>Answer a few questions... Meet your new best friend.</h4><br>
+      <a href='/survey' class="waves-effect waves-light btn cyan lighten-1"><i class="material-icons left">comment</i>Take Survey</a>
+      </section> -->
+<!--     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+</div>
+</div>
+</div>
 </div> -->
 
+    <div class='col s4'>
+      <p><a href='/api/friends'>API Friends List</a> | <a href='https://github.com/audrav07/friendfinder' target= '_blank'>GitHub Repo</a></p>
+    </div>
+  </div>
 
-            <div class="picbox">    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Friends</title>
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Heebo" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class='container'>
+        <div class='card-panel yellow darken-1 col s12'>
+            <section class='center-align'>
+                <div class="jumbotron">
+                    <h1 class="display-3">Hiking Friend Finder</h1>
+                    <p class="lead">Answer a few basic questions.<br>
+                    Then find your new hiking buddy!</p>
+                    <p class="lead"></p>
+                    <hr class="m-y-2">
+                    <a href="survey.html"><button class="btn btn btn-lg" type="button"><span class="glyphicon glyphicon-fire"></span> Start Survey</button></a>
+                    <p></p>
+                </div> -->
+
+                  <!--  <div class="picbox">    
                 <img class= "pics" src="assets/images/mountains.jpg">
             </div>  
             <div class="picbox">
@@ -74,30 +171,33 @@
             </div>
             <div class="picbox">
                 <img class= "pics" src="assets/images/rocky.jpg">
-            </div>
+            </div> -->
+                 <!-- </div> -->
+<!-- </div>
+</div> -->
+<!--  </section>
         </div>
-</div>
-</div>
-        <footer> 
-            <h5>Audrey Davis 2018 <a href="/api/friends">API Friends List</a> | <a href="https://github.com/Audrav07/FriendFinder" target="_blank">GitHub Repo</a>
-            </h5>
-        </footer>
-       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    </body>
-    </html>
-<!--  <body>
+    </div>
+                <footer>
+                    <h5>Audrey Davis 2018 <a href="/api/friends">API Friends List</a> | <a href="https://github.com/Audrav07/FriendFinder" target="_blank">GitHub Repo</a></h5>
+                </footer>
+
+                
+                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+                </script> 
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+                </script> 
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+                </script> -->  <!--  <body>
     <div id="mainPage">
         <div class="jumbotron">
             <h1>Hiking Friend Finder</h1> -->
-            <!-- <p class="answerPara"> -->
-            <!--     <p>Create your own hiking squad.</p>
+                 <!-- <p class="answerPara"> -->
+                 <!--     <p>Create your own hiking squad.</p>
                 <p>Take the survey and find your new hiking buddy!</p> -->
-          <!-- <button type="button" class="btn btn-raised btn-info" href="#">Go To Survey</a></button> -->
-
-     <!--      <a href='/survey' class="waves-effect waves-light btn cyan lighten-1">Take Survey</a> -->
-          <!--   <a href=" /survey"><button type="button" class="btn btn-info btn-lg">Go To Survey</button></a>
+                 <!-- <button type="button" class="btn btn-raised btn-info" href="#">Go To Survey</a></button> -->
+                 <!--      <a href='/survey' class="waves-effect waves-light btn cyan lighten-1">Take Survey</a> -->
+                 <!--   <a href=" /survey"><button type="button" class="btn btn-info btn-lg">Go To Survey</button></a>
             
             <p class="d-block friendlist">FriendList | Github</p>
         </div>
@@ -111,3 +211,6 @@
 </body>
 
 </html>  -->
+<!--            
+</body>
+</html> -->
