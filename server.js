@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 // app.use(express.static(__dirname + '/app/public'));
 
 
-// app.use(express.static("app/public"));
+app.use(express.static("app/public/assets"));
 
 
 app.use(bodyParser.json());
