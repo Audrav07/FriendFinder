@@ -5,24 +5,19 @@
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<title>Hiking Survey</title>
 	<link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Heebo" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!--    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css" rel="stylesheet"> -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" rel="stylesheet"><!-- 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
- -->
-	<!-- Optional theme -->
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"> -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" rel="stylesheet">
 	<link href="assets/css/survey.css" rel="stylesheet" type="text/html">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css" rel="stylesheet"><!-- Compiled and minified JavaScript -->
 	<!-- materialize icons -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
 </head>
 <body>
 	<header>
 		<nav>
 			<div class="nav-wrapper cyan darken-4">
-				<a class="brand-logo" href="/">Hiking Friend Finder</a> <!-- <div style="float:left;"> -->
-				 <a class="button-collapse" data-activates="mobile-demo" href="/"><i class="material-icons">menu</i></a> <!-- </div> -->
-				 <!--  <div style="float:right;"> -->
+				<a class="brand-logo" href="/">Hiking Friend Finder</a> 
+				 <a class="button-collapse" data-activates="mobile-demo" href="/"><i class="material-icons">menu</i></a> 
 				<ul class="right hide-on-med-and-down">
 					<li>
 						<a href="/survey">Survey</a>
@@ -45,31 +40,32 @@
 						<a href="https://github.com/audrav07/friendfinder">Github Repo</a>
 					</li>
 				</ul>
-			</div><!--   </div> -->
+			</div>
 		</nav>
 	</header>
 	<div class="row center-align">
-		<!-- <div class="col s8 offset-m2 z-depth-5 mainpanel"> -->
+		
 		<div class="col s8 offset-m2 z-depth-5 mainpanel">
 			<div class="card white darken-4">
 				<div class="card-content black-text">
 					<span class="card-title">Hiking Friend Finder</span>
 					<h2><strong>Survey Questions</strong></h2>
-					<div class="divider"></div><!--Name Input -->
+					<div class="divider"></div>
+
 					<div class="row">
 						<div class="input-field col s6">
 							<i class="material-icons prefix">account_circle</i> <input class="validate" id="nameInput" type="text"> <label class="active" for="nameInput">Name</label>
 						</div>
-					</div><!--    <Image Link Input-->
+					</div>
 					<div class="row">
 						<div class="input-field col s6">
 							<i class="material-icons prefix">perm_media</i> <input class="validate" id="imageInput" type="text"> <label class="active" for="imageInput">Image Link</label>
 						</div><br>
 						<br>
-						<!-- <div>
-              <h4 class="center-align"><strong>Survey Questions</strong></h4></div> -->
+						
 					</div>
-					<div class="divider"></div><!-- Questions -->
+					<div class="divider"></div>
+					<!-- Questions -->
 					<div class='section'>
 						<p>1) It's important that your hike includes waterfalls.</p><input id="water1" name="question1" type="radio" value="1"> <label for="water1">Strongly Disagree</label> <input id="water2" name="question1" type="radio" value="2"> <label for="water2">Disagree</label> <input id="water3" name="question1" type="radio" value="3"> <label for="water3">Neutral</label> <input id="water4" name="question1" type="radio" value="4"> <label for="water4">Agree</label> <input id="water5" name="question1" type="radio" value="5"> <label for="water5">Strongly Agree</label>
 					</div>
@@ -99,16 +95,14 @@
 					</div>
 					<div class='section'>
 						<p>10) I prefer to bushwhack than urban hike.</p><input id="urban1" name="question10" type="radio" value="1"> <label for="urban1">Strongly Disagree</label> <input id="urban2" name="question10" type="radio" value="2"> <label for="urban2">Disagree</label> <input id="urban3" name="question10" type="radio" value="3"> <label for="urban3">Neutral</label> <input id="urban4" name="question10" type="radio" value="4"> <label for="urban4">Agree</label> <input id="urban5" name="question10" type="radio" value="5"> <label for="urban5">Strongly Agree</label>
-					</div><!-- <div class='section'>
-                        <button class="waves-effect waves-light btn-large" id="submit" type="button">Match Me!</button>
-                    </div> -->
+					</div>
 					<div>
 						<button class="btn waves-effect waves-light" id="submit" name="action" type="submit">Match Me! <i class="material-icons right">send</i></button>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div><!--  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+	</div>
 	<!-- Modal Structure -->
 	<div class="modal" id="modal1">
 		<div class="modal-content">
@@ -117,18 +111,7 @@
 		<div class="modal-footer">
 			<a class="modal-action modal-close waves-effect waves-green btn-flat" href="/survey">Agree</a>
 		</div>
-	</div><!--     Modal Structure  -->
-	<!-- <div id="modal1" class="modal">
-          <div class="modal-content">
-            <h4>Meet Your New BFF</h4>
-            <h5 id="matchName"></h5>
-            <img id="matchPic" src="" alt="No Image" width = 250px>
-          </div>
-        <div class="modal-footer">
-          <a href="survey.html" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
-        </div>
-      </div> -->
-	<!-- </div> -->
+	</div>
 	<footer class="page-footer cyan darken-4">
 		<div class="container">
 			<div class="row">
@@ -149,9 +132,7 @@
 				</div>
 			</div>
 		</div>
-	</footer><!-- <div class='col s4'>
-            <p><a href='/api/friends'>API Friends List</a> | <a href='https://github.com/audrav07/friendfinder' target='_blank'>GitHub Repo</a></p>
-        </div> -->
+	</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js">
 	</script> <!-- jQuery -->
 	 
@@ -159,10 +140,7 @@
 	</script> <!-- Compiled and minified JavaScript -->
 	 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js">
-	</script> <!--  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script> -->
-	 <!-- JavaScript & jQuery -->
+	</script> 
 	 
 	<script type="text/javascript">
 	$(document).ready(function() {
@@ -177,9 +155,7 @@
 	           });
 	       });
 	   
-	   // $(document).ready(function() {
-	   // // Code that makes modals trigger on click
-	   // $('.modal-trigger').leanModal();
+	 
 	   // // When we click the submit button...
 	   $("#submit").on("click",function(event){
 	       event.preventDefault();
@@ -212,7 +188,7 @@
 	       // Making an AJAX post request. The server calculates the match and sends back the info in the data object.
 
 
-	       // $.post(currentURL + "/api/friends", person)
+	       
 	       $.post('./api/friends', person)
 	           
 	       .done(function(data){

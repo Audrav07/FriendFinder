@@ -1,52 +1,22 @@
-body {
-    background-image: url('../images/mountains.jpg');
-    background-size: cover;
-   font-family:Heebo, sans-serif;
-}
-
 #matchPhoto {
     width: 100%;
 }
-h1, h3, h2, p{
-    font-family:Heebo, sans-serif;
+h1, h3, h2, p {
+    font-family: Heebo, sans-serif;
 }
-
-.jumbotron {
-        background-image: url('../images/mountains.jpg');
-	background-color: white;
-/*    background-color:rgba(234,241,254,0.48);*/
-    border-radius: 25px;
-	width: auto;
-}
-
-/*h4{
-    text-align: center;
-}*/
-
-#modal1{
+#modal1 {
     height: 500px;
     width: 400px;
-
 }
 .modal-content {
-	text-align: center;
+    text-align: center;
 }
-
-form h1,
-form h3,
-form h5,
-footer a {
-    color: white;
-}
-
 #matchName {
     font-size: 40px;
 }
-
 footer p {
     margin: 0 auto;
 }
-
-.nav-wrapper{
-   background-color: cyan darken-4;
+.nav-wrapper {
+    background-color: cyan darken-4;
 }
