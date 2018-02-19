@@ -1,5 +1,6 @@
 const path = require("path");
 const friendList = require("../data/friends.js");
+
 module.exports = function(app) {
 	app.get("/api/friends", function(req, res) {
 		res.json(friendList);
@@ -22,6 +23,7 @@ module.exports = function(app) {
 			}
 		}
 		var bff = friendList[bestMatch];
+		console.log(bff);
 		res.json(bff);
 		friendList.push(req.body);
 	});
