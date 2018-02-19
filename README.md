@@ -10,9 +10,9 @@ Hiking Friend Finder is a compatability-based application. The application takes
 3. Answer 10 questions based on a scale from 1 (Strongly Disagree) to 5 (Strongly Agree)
 4. Once the survey is complete a match is generated
 
-![Initial Page](images/filename front.png)
+![Initial Page](images/front.png)
 
-![Survey](images/filename survey.png)
+![Survey](images/survey.png)
 
 # Packages Used
 - Node.js
